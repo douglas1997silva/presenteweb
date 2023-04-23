@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Libre+Baskerville:ital@1&family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --cor-primaria: #FCC8D1;
+    --cor-segundaria:#F15A59;
+    --cor-terceira: #D14D72;
+    --font-img: 13rem;
+    --cor-hover:#E8A0BF;
+    --cor-shadow: 5px 10px #454545;
+}
+
+body{
+    background:var(--cor-primaria) ;
+    color:var(--cor-segundaria);
+   
+    box-sizing: border-box;
+   
+   
+}
+.cabecalho{
+    background-color: var(--cor-terceira);
+    color: var(--cor-primaria);
+   
+}
+.cabecalho_link{
+    display: flex;
+    padding: 0 10% ;
+    justify-content:flex-start ;
+    gap: 30px;
+   
+
+}
+.cabecalho_link_link{
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.5rem;
+    
+
+}
+.cabecalho_link_link:hover{
+ background-color: var(--cor-hover);
+ border-radius: 10px;
+}
+.aniversario{
+    display: flex;
+    width: 50%;
+    gap: 80px;
+    padding: 8% 15%;
+   align-items: center;
+   justify-content: center;
+  
+    
+
+}
+.aniversario_foto{
+    display: flex;
+    width: 50%;
+    padding: 8% 25%;
+    gap:20px;
+    justify-content: center;
+    
+
+}
+.aniversario_carta{
+    
+    padding: 5% 10%;
+}
+
+.aniversario_primeiro{
+    display: flex;
+    flex-direction: column;
+    
+
+  
+   
+}
+.aniversario_titulo{
+    font-family: 'Libre Baskerville', serif;
+  
+
+
+}
+.figura{
+    width: 15.2rem;
+    border-radius:20px;
+
+
+   
+}
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-terceira);
+    color: var(--cor-primaria);
+    padding: 0 , 5%;
+    font-weight: 400;
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.6rem;
+}
+.carta{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8% 10%;
+    gap: 25px;
+    align-items: center;
+
+}
+.carta_texto{
+    font-family: 'Montserrat', sans-serif;
+}
+.fotos_local{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 5% 10%;
+}
+.familia5{
+    width: var(--font-img);
+    box-shadow: var(--cor-shadow);
+    border-radius: 20px;
+    
+}
+.casamento{
+    width: var(--font-img) ;
+    box-shadow: var(--cor-shadow);
+    border-radius: 20px;
+}
+.natal{
+    width: var(--font-img);
+    box-shadow: var(--cor-shadow);
+    border-radius: 20px;
+}
+.casal{
+    width: var(--font-img);
+    box-shadow: var(--cor-shadow);
+    border-radius: 20px;
+}
+.criança{
+    width: var(--font-img);
+    box-shadow: var(--cor-shadow);
+    border-radius: 20px;
+}
+
+
+@media(max-width:1023px){
+    .fotos_local{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .cabecalho_link{
+        justify-content: center;
+        gap: 30px;
+    }
+    .aniversario{
+        flex-direction: column;
+        align-items: center;
+     }
+     .rodape{
+        text-align: center;
+     }
+}
+
